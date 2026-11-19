@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14365d">
+<title>美联储12月议息·关注清单</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;background:#f2f5f9;color:#1c2430;line-height:1.55;padding-bottom:40px}
+header{background:#14365d;color:#fff;padding:18px 16px 16px;padding-top:max(18px,env(safe-area-inset-top))}
+header h1{margin:0;font-size:19px}
+header p{margin:6px 0 0;font-size:13px;opacity:.85}
+.cd{margin-top:12px;background:rgba(255,255,255,.12);border-radius:10px;padding:10px 12px;font-size:14px}
+.cd b{font-size:20px;letter-spacing:.5px}
+.wrap{padding:12px}
+.card{background:#fff;border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.card h2{margin:0 0 8px;font-size:16px}
+h3{font-size:15px;margin:18px 4px 8px}
+.item{display:flex;gap:10px;padding:9px 0;border-top:1px solid #eef1f5;font-size:14px}
+.item:first-of-type{border-top:none}
+.item input{width:20px;height:20px;margin-top:2px;flex:none;accent-color:#1e6fd9}
+.item .t{flex:1}
+.item .t small{display:block;color:#6a7686;font-size:12.5px;margin-top:2px}
+.item.done .t{color:#9aa4b2;text-decoration:line-through}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+td,th{padding:7px 6px;border-top:1px solid #eef1f5;text-align:left;vertical-align:top}
+th{background:#f7f9fc;color:#445}
+.warn{background:#fff7e0;border:1px solid #f1d98a;border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:12px}
+.red{color:#c0392b}
+.mini{font-size:12.5px;color:#667;margin-top:8px}
+a{color:#1e6fd9;text-decoration:none;word-break:break-all}
+.reset{display:block;margin:16px auto 0;padding:9px 20px;border:1px solid #c7ced8;background:#fff;border-radius:10px;font-size:13px;color:#667}
+</style>
+</head>
+<body>
+<header>
+<h1>🏦 美联储 12 月议息·关注清单</h1>
+<p>利率决议：北京时间 12 月 10 日（周四）凌晨 3:00</p>
+<div class="cd" id="cd">倒计时计算中…</div>
+</header>
+<div class="wrap">
+
+<div class="warn">这是信息整理，不是投资建议，也不预测结果。会议日程可能变动，以美联储官网为准。</div>
+
+<h3>时间表（北京时间）</h3>
+<div class="card">
+<table>
+<tr><th>时间</th><th>事件</th></tr>
+<tr><td>12 月 9~10 日</td><td>FOMC 会议（美东 12 月 8~9 日，两天）</td></tr>
+<tr><td><b>12 月 10 日 03:00</b></td><td><b>利率决议 + 声明 + 点阵图/经济预测</b></td></tr>
+<tr><td><b>12 月 10 日 03:30</b></td><td><b>主席新闻发布会</b></td></tr>
+<tr><td>12 月 10 日白天</td><td>国内 A 股、港股开盘反应</td></tr>
+<tr><td>约 12 月 30 日（美东）</td><td>本次会议纪要，北京时间已是 12 月 31 日凌晨</td></tr>
+</table>
+<div class="mini">冬令时，所以是凌晨 3 点，比夏令时晚 1 小时。当前政策利率 3.75%~4.00%（9 月加息后）。</div>
+</div>
+
+<h3>会前（勾选完成）</h3>
+<div class="card" id="g1"></div>
+
+<h3>12 月 10 日凌晨 / 起床后</h3>
+<div class="card" id="g2"></div>
+
+<h3>会后</h3>
+<div class="card" id="g3"></div>
+
+<h3>一手消息去哪看</h3>
+<div class="card">
+<table>
+<tr><th>渠道</th><th>说明</th></tr>
+<tr><td><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener">美联储官网 · FOMC 日历</a></td><td>声明、纪要、点阵图原文，最权威</td></tr>
+<tr><td><a href="https://www.federalreserve.gov/newsevents/pressreleases.htm" target="_blank" rel="noopener">美联储官网 · 新闻稿</a></td><td>决议公布时第一时间更新，可在官网订阅邮件/RSS</td></tr>
+<tr><td>主席新闻发布会直播</td><td>官网和官方视频账号会直播，英文，凌晨 3:30</td></tr>
+</table>
+<div class="mini">一手 = 美联储自己发布的原文，其余都是转述。</div>
+</div>
+
+<h3>二手但方便（中文）</h3>
+<div class="card">
+<table>
+<tr><th>渠道</th><th>特点</th></tr>
+<tr><td>财联社、华尔街见闻 7×24 快讯</td><td>决议后几分钟有翻译和解读</td></tr>
+<tr><td>新华社、央视财经</td><td>官方媒体，转述较稳</td></tr>
+<tr><td><a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" rel="noopener">CME FedWatch</a></td><td>市场对加息的概率预期，<b>不是美联储的决定</b>，随数据变化</td></tr>
+</table>
+</div>
+
+<h3>要避开的</h3>
+<div class="card">
+<div class="item"><div class="t"><span class="red">✖</span> 短视频、群聊里的「内幕消息」<small>决议公布前是保密的，所谓提前泄露不可信</small></div></div>
+<div class="item"><div class="t"><span class="red">✖</span> 只看标题<small>很多只截半句，要看原文或完整报道</small></div></div>
+<div class="item"><div class="t"><span class="red">✖</span> 凌晨公布瞬间下市价单<small>几秒内价格可能剧烈跳动</small></div></div>
+<div class="item"><div class="t"><span class="red">✖</span> 因一条新闻追涨杀跌<small>睡醒后、隔几个小时再决定更稳</small></div></div>
+</div>
+
+<button class="reset" onclick="resetAll()">清空勾选</button>
+</div>
+
+<script>
+const G={
+g1:[
+['看一下 CME FedWatch 的最新加息概率','预期有多一致；会随数据变化，别用旧数字'],
+['留意最新 CPI、非农就业数据','决策主要依据，具体公布日期以官方日历为准'],
+['了解上次会议纪要的鹰派信号','近期金价下跌与此有关'],
+['想好自己的计划：买不买、买多少、分几批','先写下来，别在凌晨当场决定'],
+['把 12 月 10 日凌晨 3:00 设个提醒','不一定要起来看']
+],
+g2:[
+['先看美联储官网的声明原文','federalreserve.gov，对比上次措辞有无变化'],
+['看加息/不变/降息的结果和幅度','再看有没有分歧票'],
+['看点阵图和经济预测','官员预期明年利率走到哪里，往往是最大变数'],
+['听或看主席发布会要点','对未来的表态常常比利率本身更影响市场'],
+['再看财联社/华尔街见闻解读','中文快讯方便，但以原文为准']
+],
+g3:[
+['看美元、美债收益率、黄金、美股的反应','符合预期也可能大涨大跌'],
+['看 12 月 10 日国内开盘表现','A 股、港股'],
+['隔几个小时再决定是否操作','别被短期波动带着走'],
+['若要买入：分批，控制比例','不要重仓，不要一次梭哈']
+]};
+const KEY='fed_dec_v1';
+let st=JSON.parse(localStorage.getItem(KEY)||'{}');
+function render(){
+ for(const g in G){
+  const el=document.getElementById(g);el.innerHTML='';
+  G[g].forEach((it,i)=>{
+   const id=g+i;const d=document.createElement('label');d.className='item'+(st[id]?' done':'');
+   d.innerHTML=`<input type="checkbox" ${st[id]?'checked':''}><span class="t">${it[0]}<small>${it[1]}</small></span>`;
+   d.querySelector('input').onchange=e=>{st[id]=e.target.checked;localStorage.setItem(KEY,JSON.stringify(st));render()};
+   el.appendChild(d);
+  });
+ }
+}
+function resetAll(){if(confirm('清空所有勾选？')){st={};localStorage.setItem(KEY,'{}');render()}}
+function tick(){
+ const target=new Date('2026-12-10T03:00:00+08:00').getTime();
+ const diff=target-Date.now();
+ const el=document.getElementById('cd');
+ if(diff<=0){el.innerHTML='决议时间已过，请查看美联储官网声明';return}
+ const d=Math.floor(diff/864e5),h=Math.floor(diff%864e5/36e5),m=Math.floor(diff%36e5/6e4);
+ el.innerHTML=`距离决议还有 <b>${d} 天 ${h} 小时 ${m} 分</b>`;
+}
+render();tick();setInterval(tick,30000);
+</script>
+</body>
+</html>
